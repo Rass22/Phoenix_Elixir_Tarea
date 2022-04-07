@@ -1,0 +1,38 @@
+<div class="todo">
+<h1>Show Veterinario</h1>
+
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Veterinary_symbol.svg/1200px-Veterinary_symbol.svg.png">
+
+<ul class="show">
+  
+
+  <li>
+    <strong>Name:</strong>
+    <%= @veterinario.name %>
+  </li>
+
+  <li>
+    <strong>Age:</strong>
+    <%= @veterinario.age %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @veterinario.email %>
+  </li>
+
+  <li>
+    <strong>Especialidad:</strong>
+    <%= @veterinario.especialidad %>
+  </li>
+
+  <li>
+    <strong>Sex:</strong>
+    <%= @veterinario.sex %>
+  </li>
+
+</ul>
+</div>
+<span><%= link "Edit", to: Routes.veterinario_path(@conn, :edit, @veterinario) %></span> |
+<span><%= link "Back", to: Routes.veterinario_path(@conn, :index) %></span>

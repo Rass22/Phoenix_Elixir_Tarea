@@ -1,0 +1,31 @@
+<div class="todo">
+<h1>Show Pets</h1>
+
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Veterinary_symbol.svg/1200px-Veterinary_symbol.svg.png">
+<ul class="show">
+
+  <li>
+    <strong>Name:</strong>
+    <%= @pet.name %>
+  </li>
+
+  <li>
+    <strong>Age:</strong>
+    <%= @pet.age %>
+  </li>
+
+  <li>
+    <strong>Sex:</strong>
+    <%= @pet.sex %>
+  </li>
+
+  <li>
+    <strong>Type:</strong>
+    <%= @pet.type %>
+  </li>
+
+</ul>
+</div>
+<span><%= link "Edit", to: Routes.pet_path(@conn, :edit, @pet) %></span> |
+<span><%= link "Back", to: Routes.pet_path(@conn, :index) %></span>
